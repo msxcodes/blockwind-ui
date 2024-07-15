@@ -9,7 +9,7 @@ export const navItems: INavItem[] = [
   {
     id: "02",
     title: "Components",
-    link: "/component",
+    link: "/component/avatar",
   },
   {
     id: "03",

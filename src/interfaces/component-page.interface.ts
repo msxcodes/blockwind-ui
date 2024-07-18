@@ -4,3 +4,8 @@ export interface ISidebarComponent {
   link: string;
   icon: any;
 }
+export interface IComponentNavMenu {
+  name: string;
+  id: string;
+  href: string;
+}

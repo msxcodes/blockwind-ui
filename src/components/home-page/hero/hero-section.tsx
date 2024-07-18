@@ -4,6 +4,7 @@ import { HeroHighlight, Highlight } from "../../ui/hero-highlight";
 import { Button } from "../../ui/button";
 import { MovingButton } from "../../ui/moving-button";
 import HeroFooter from "./hero-footer";
+import Link from "next/link";
 
 export function HeroBanner() {
   const words = ["better", "beautiful", "modern"];
@@ -37,14 +38,16 @@ export function HeroBanner() {
         </p>
         <div className="flex items-center gap-2 justify-center text-center">
           <Button className="bg-blue-500 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
-            Get Started
+            <Link href={"/component/quick-start"}>Get Started</Link>
           </Button>
           <MovingButton
             containerClassName="rounded-full"
             as="button"
             className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
           >
-            <span>Browse Components</span>
+            <Link href={"/component/alert"} className="">
+              Browse Components
+            </Link>
           </MovingButton>
         </div>
         <HeroFooter />

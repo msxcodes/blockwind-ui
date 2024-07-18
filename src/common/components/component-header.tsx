@@ -1,13 +1,18 @@
 import React from "react";
 
-export default function ComponentHeader() {
+interface IComponentHeaderProps {
+  title: string;
+  description?: string;
+}
+
+export default function ComponentHeader({
+  title,
+  description,
+}: IComponentHeaderProps) {
   return (
-    <div className="flex flex-col gap-1 border-b pb-12 border-neutral-800">
-      <h2 className="text-4xl font-bold">Avatar</h2>
-      <p className="text-lg opacity-60 font-medium">
-        Cards provide a flexible and extensible content container with multiple
-        variants and options.
-      </p>
+    <div className="flex flex-col gap-2 border-b pb-12 border-neutral-800">
+      <h2 className="text-3xl font-semibold">{title}</h2>
+      <p className="text-base opacity-60 font-medium">{description}</p>
     </div>
   );
 }

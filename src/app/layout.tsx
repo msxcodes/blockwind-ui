@@ -20,7 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} dark:bg-black`}>
         <NextUIProvider>
-          <ThemeProvider defaultTheme="Dark" attribute="class">
+          <ThemeProvider
+            defaultTheme="Dark"
+            attribute="class"
+            disableTransitionOnChange
+          >
             {children}
           </ThemeProvider>
         </NextUIProvider>

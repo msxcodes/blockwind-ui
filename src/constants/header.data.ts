@@ -3,17 +3,12 @@ import { INavItem } from "@/interfaces/home-page.interface";
 export const navItems: INavItem[] = [
   {
     id: "01",
-    title: "Docs",
-    link: "/",
+    title: "Getting Started",
+    link: "/component/quick-start",
   },
   {
     id: "02",
     title: "Components",
-    link: "/component/avatar",
-  },
-  {
-    id: "03",
-    title: "Examples",
-    link: "/",
+    link: "/component/alert",
   },
 ];

@@ -4,8 +4,8 @@ import NavMenu from "./nav-menu";
 
 const Header = () => {
   return (
-    <header className="mb-2 shadow bg-white/30 dark:bg-black dark:shadow-neutral-800 fixed z-30 w-full ">
-      <div className="relative flex max-w-screen-2xl flex-col overflow-hidden px-4 py-4 sm:mx-auto sm:flex-row">
+    <header className="mb-2 shadow bg-white/70 dark:bg-black/30 dark:shadow-neutral-800 fixed z-30 w-full backdrop-blur-md dark:backdrop-blur-3xl">
+      <div className="relative flex items-center max-w-screen-2xl flex-col overflow-hidden px-4 py-4 sm:mx-auto sm:flex-row">
         {/* <img className="h-8 w-8" src="" alt="" /> */}
         <div className="cursor-pointer font-semibold text-2xl">
           <Link href={"/"}>

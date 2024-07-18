@@ -1,3 +1,82 @@
+import { IComponentNavMenu } from "@/interfaces/component-page.interface";
+import {
+  IAvatarImage,
+  IAvatarPlaceHolderIcon,
+} from "@/interfaces/indi-component.interface";
+
+export const AvatarImageData: IAvatarImage[] = [
+  {
+    id: 1,
+    src: "/avatar/avatar-img.jpg",
+    width: 30,
+    height: 30,
+  },
+  {
+    id: 2,
+    src: "/avatar/avatar-img.jpg",
+    width: 40,
+    height: 40,
+  },
+  {
+    id: 3,
+    src: "/avatar/avatar-img.jpg",
+    width: 50,
+    height: 50,
+  },
+  {
+    id: 4,
+    src: "/avatar/avatar-img.jpg",
+    width: 60,
+    height: 60,
+  },
+];
+export const AvatarPlaceholderIcon: IAvatarPlaceHolderIcon[] = [
+  {
+    id: 1,
+    width: 20,
+    height: 20,
+    size: 8,
+  },
+  {
+    id: 2,
+    width: 40,
+    height: 40,
+    size: 8,
+  },
+  {
+    id: 3,
+    width: 40,
+    height: 40,
+    size: 16,
+  },
+  {
+    id: 4,
+    width: 50,
+    height: 50,
+    size: 20,
+  },
+];
+
+// RIGHT NAVMENU DATA
+export const AvatarNavData: IComponentNavMenu[] = [
+  {
+    name: "Circular Avatar",
+    id: "circular-avatar",
+    href: "#circular-avatar",
+  },
+  {
+    name: "Rounded Avatar",
+    id: "rounded-avatar",
+    href: "#rounded-avatar",
+  },
+  {
+    name: "Placeholder Avatar",
+    id: "placeholder-avatar",
+    href: "#placeholder-avatar",
+  },
+];
+
+// AVATAR ALL CODE DATA
 export const AvatarCodeData = {
   CircularAvatarHtml: `<img class="inline-block size-8 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Image Description">
 <img class="inline-block size-[38px] rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Image Description">

@@ -28,7 +28,7 @@ interface CommandDialogProps extends DialogProps {}
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
     <Dialog {...props}>
-      <DialogContent className="overflow-hidden p-0">
+      <DialogContent className="overflow-hidden p-0 ">
         <Command className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
           {children}
         </Command>
@@ -66,7 +66,7 @@ const CommandList = React.forwardRef<
   <CommandPrimitive.List
     ref={ref}
     className={cn(
-      "max-h-[calc(100vh-8rem)] overflow-y-auto overflow-x-hidden",
+      "max-h-[calc(100vh-8rem)] overflow-y-auto overflow-x-hidden scrollContainer",
       className
     )}
     {...props}
@@ -123,7 +123,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex border-l-2 font-medium cursor-pointer select-none items-center ml-3 border-neutral-700 px-4 hover:translate-x-4 py-1.5 text-base outline-none aria-selected:border-blue-500 aria-selected:border-l-4 aria-selected:font-semibold aria-selected:opacity-100 aria-selected:bg-accent aria-selected:text-accent-foreground opacity-60 transition-all duration-300 hover:opacity-100",
+      "relative flex border-l-2 font-medium cursor-pointer select-none items-center ml-3 border-neutral-700  hover:translate-x-4  text-base outline-none hover:border-blue-500 hover:border-l-4 hover:font-semibold hover:bg-accent hover:text-accent-foreground opacity-60 transition-all duration-300 hover:opacity-100",
       className
     )}
     {...props}

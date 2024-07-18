@@ -19,4 +19,31 @@ export interface IComponentTypeHeader {
 export interface ISwitchTab {
   preview: any;
   html: any;
+  language: string;
+}
+
+export interface IComponentBreadcrumb {
+  title: string;
+  link: string;
+}
+
+export interface IComponentBreadcrumbProps {
+  data: IComponentBreadcrumb[];
+  pageTitle: string;
+}
+export interface ISubHeaderLink {
+  title: string;
+  subTitle: string;
+  linkText: string;
+  link: string;
+  id: string;
+}
+
+export interface IMainContentComponent {
+  id: string;
+  title: string;
+  description: string;
+  code: string;
+  language: string;
+  preview: any;
 }

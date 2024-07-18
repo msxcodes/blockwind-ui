@@ -8,7 +8,7 @@ const NavMenu = () => {
   return (
     <nav
       aria-labelledby="header-navigation"
-      className="peer-checked:mt-8 peer-checked:max-h-32 bg-white dark:bg-black flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all sm:ml-24 sm:max-h-full sm:flex-row sm:items-center"
+      className="peer-checked:mt-8 peer-checked:max-h-32 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all sm:ml-24 sm:max-h-full sm:flex-row sm:items-center "
     >
       <h2 className="sr-only" id="header-navigation">
         Header navigation
@@ -23,7 +23,7 @@ const NavMenu = () => {
           );
         })}
       </ul>
-      <ul className="mt-4 gap-3 flex sm:mt-0">
+      <ul className="mt-4 gap-3 flex sm:mt-0 items-center">
         <li>
           <div className="flex items-center px-3 rounded-md border border-neutral-700 p-1 ">
             <IoSearch className="opacity-60" />
@@ -34,7 +34,7 @@ const NavMenu = () => {
             />
           </div>
         </li>
-        <li className="hidden md:block">
+        <li className="hidden md:block p-1 hover:bg-gray-200 dark:hover:bg-neutral-800 transition-all duration-300 rounded-full">
           <ThemeSwitcher />
         </li>
       </ul>

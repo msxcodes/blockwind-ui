@@ -24,6 +24,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
     --radius: 0.5rem;
+    --scrollColor: rgb(184, 179, 179);
   }
 
   .dark {
@@ -46,15 +47,53 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    --scrollColor: rgb(20, 19, 19);
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
+* {
+  scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for IE and Edge */
-.hide-scrollbar {
-  -ms-overflow-style: none;
+/* Hide scrollbar when not scrolling */
+.scrollContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+/* Show scrollbar on hover or when scrolling */
+.scrollContainer:hover::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: var(--background);
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: var(--scrollColor);
+  border-radius: 10px;
+}
+
+/* Horizontal scrollbar style  */
+.scrollContainerX::-webkit-scrollbar {
+  height: 8px;
+  background: red;
+}
+/* Show scrollbar on hover or when scrolling */
+/* .scrollContainerX:hover::-webkit-scrollbar:horizontal {
+  height: 4px;
+  background: var(--background);
+} */
+.scrollContainerX::-webkit-scrollbar-thumb:horizontal {
+  background: var(--scrollColor);
+  border-radius: 10px;
+}
+
+.active-scroll-spy {
+  color: skyblue;
+  border-left: 1px solid skyblue;
+}
+
+html {
+  scroll-padding-top: 60px; /* height of your navbar */
 }

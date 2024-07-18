@@ -1,6 +1,5 @@
 import {
   Breadcrumb,
-  BreadcrumbEllipsis,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
@@ -8,26 +7,30 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  IComponentBreadcrumb,
+  IComponentBreadcrumbProps,
+} from "@/interfaces/indi-component.interface";
 
-export function ComponentNavMenu() {
+export function ComponentNavMenu({
+  data,
+  pageTitle,
+}: IComponentBreadcrumbProps) {
   return (
     <Breadcrumb>
       <BreadcrumbList>
-        <BreadcrumbItem>
-          <BreadcrumbLink href="/">Home</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbLink href="#">Component</BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbPage>Avatar</BreadcrumbPage>
+        {data.map((item, index) => {
+          return (
+            <div key={index} className="flex items-center gap-2">
+              <BreadcrumbItem>
+                <BreadcrumbLink href={item.link}>{item.title}</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+            </div>
+          );
+        })}
+
+        <BreadcrumbItem className="cursor-pointer">
+          <BreadcrumbPage className="font-semibold">{pageTitle}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

@@ -25,7 +25,6 @@ export function LeftSideBar() {
   };
 
   const path = usePathname();
-  console.log(path);
 
   const sortedFormComponent = FormComponentsData.sort(handleSorting);
   const sortedSidebarComponentData = SidebarComponentData.sort(handleSorting);

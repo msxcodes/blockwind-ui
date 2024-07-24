@@ -13,11 +13,12 @@ export default function CardComponent() {
             <ComponentTypeHeader
               title={data.title}
               description={data.description}
+              sectionID=""
             />
             <SwitchTab
               preview={data.preview}
               language={data.language}
-              html={data.code}
+              html={data.html}
             />
           </div>
         );
@@ -62,8 +63,8 @@ const _cardData: IMainContentComponent[] = [
     ),
   },
   {
-    id: "simple-card",
-    title: "Simple Card",
+    id: "background-card",
+    title: "Card with background",
     description:
       "Cards provide a flexible and extensible content container with multiple variants and options.",
     code: "Card Code",

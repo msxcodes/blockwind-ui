@@ -1,10 +1,13 @@
+"use client";
 import { ThemeSwitcher } from "@/common/components/theme-toggle";
 import { Input } from "@/components/ui/input";
 import { navItems } from "@/constants/header.data";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { IoSearch } from "react-icons/io5";
 
 const NavMenu = () => {
+  const path = usePathname();
   return (
     <nav
       aria-labelledby="header-navigation"
@@ -17,7 +20,12 @@ const NavMenu = () => {
       <ul className="flex flex-col items-center sm:flex-row">
         {navItems.map((item) => {
           return (
-            <li className="font-semibold text-md sm:mr-6 opacity-50 hover:opacity-100 transition-all duration-300">
+            <li
+              key={item.id}
+              className={`${
+                item.link === path ? "opacity-100" : "opacity-50"
+              } font-semibold text-md sm:mr-6 hover:opacity-100 transition-all duration-300`}
+            >
               <Link href={item.link}>{item.title}</Link>
             </li>
           );

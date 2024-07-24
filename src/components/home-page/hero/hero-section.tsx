@@ -37,7 +37,7 @@ export function HeroBanner() {
           it easy to build your products.
         </p>
         <div className="flex items-center gap-2 justify-center text-center">
-          <Button className="bg-blue-500 bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+          <Button className="bg-blue-500 bg-gradient text-white">
             <Link href={"/component/quick-start"}>Get Started</Link>
           </Button>
           <MovingButton

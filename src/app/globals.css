@@ -97,3 +97,14 @@
 html {
   scroll-padding-top: 60px; /* height of your navbar */
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #764ba2, #667eea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #764ba2, #667eea);
+}

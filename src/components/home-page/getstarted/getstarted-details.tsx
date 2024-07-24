@@ -34,7 +34,7 @@ export function GetStartedDetails() {
         className=""
       >
         <div className="flex justify-center size-full flex-col">
-          <div className="flex flex-col justify-center items-center bg-gradient-to-tr bg-clip-text text-transparent from-indigo-500 to-purple-500">
+          <div className="flex flex-col justify-center items-center text-gradient">
             <span className="font-semibold text-sm">OVER</span>
             <span className="text-6xl font-extrabold">100+</span>
           </div>
@@ -46,7 +46,7 @@ export function GetStartedDetails() {
               Kick-start your project effortlessly with Pixelwind UI's wide
               range of examples and layouts using Tailwind CSS.
             </p>
-            <span className="text-indigo-500 hover:underline mt-2 font-medium flex items-center gap-1 z-10">
+            <span className=" hover:underline mt-2 font-medium flex items-center gap-1 z-10">
               Get Started <FaAngleRight size={13} />{" "}
             </span>
           </div>

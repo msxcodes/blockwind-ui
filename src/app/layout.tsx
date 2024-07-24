@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "BlockwindUI - TailwindCSS Library",
   description: "PixelwindUI is a library for tailwind css components.",
+  icons: {
+    icon: "bw-logo.svg",
+  },
 };
 
 export default function RootLayout({

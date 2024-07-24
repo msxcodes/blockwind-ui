@@ -1,6 +1,8 @@
 import { ThemeSwitcher } from "@/common/components/theme-toggle";
 import Link from "next/link";
 import NavMenu from "./nav-menu";
+import Image from "next/image";
+import Logo from "../../../public/bw-logo.svg";
 
 const Header = () => {
   return (
@@ -8,8 +10,11 @@ const Header = () => {
       <div className="relative flex items-center max-w-screen-2xl flex-col overflow-hidden px-4 py-4 sm:mx-auto sm:flex-row">
         {/* <img className="h-8 w-8" src="" alt="" /> */}
         <div className="cursor-pointer font-semibold text-2xl">
-          <Link href={"/"}>
-            <span className="cursor-pointer">BlockwindUI</span>
+          <Link href={"/"} className="flex items-center gap-1">
+            <Image src={Logo} alt="logo" width={35} height={35} />
+            <span className="cursor-pointer text-gradient font-extrabold">
+              BlockwindUI
+            </span>
           </Link>
         </div>
 

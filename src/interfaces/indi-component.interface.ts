@@ -14,12 +14,14 @@ export interface IAvatarPlaceHolderIcon {
 
 export interface IComponentTypeHeader {
   title: string;
-  description: string;
+  description?: string;
+  sectionID: string;
 }
 export interface ISwitchTab {
   preview: any;
   html: any;
   language: string;
+  jsx: any;
 }
 
 export interface IComponentBreadcrumb {
@@ -42,8 +44,10 @@ export interface ISubHeaderLink {
 export interface IMainContentComponent {
   id: string;
   title: string;
-  description: string;
-  code: string;
+  description?: string;
+  html: string | JSX.Element;
+  jsx: string | JSX.Element;
   language: string;
   preview: any;
+  sectionID: string;
 }

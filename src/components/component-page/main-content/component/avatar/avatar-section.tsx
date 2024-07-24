@@ -6,7 +6,8 @@ import { AvatarBreadcrumbData } from "@/constants/breadcrumbs.data";
 import MainContainer from "../../main-content.layout";
 import MainContentNav from "../../../../../common/components/main-content-nav";
 import AvatarComponents from "./avatar-components";
-import { AvatarNavData } from "@/constants/sidebar-component/avatar.data";
+import MainContentFooter from "@/common/components/main-content-footer";
+import { AvatarNavData } from "@/constants/sidebar-component/avatar/avatar.data";
 
 export default function AvatarSection() {
   const [activeSection, setActiveSection] = useState<string>("");
@@ -25,10 +26,7 @@ export default function AvatarSection() {
         variants and options."
         />
         <AvatarComponents />
-
-        <span className="text-center mt-12 opacity-30 font-medium">
-          © 2024 Blockwind UI.
-        </span>
+        <MainContentFooter />
       </MainContainer>
       <MainContentNav data={AvatarNavData} />
     </div>

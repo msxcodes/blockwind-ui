@@ -13,9 +13,7 @@ const HomeComponentsSection = () => {
             subtitle="Components"
             description="Based on the Tailwind CSS utility classes, Pixelwind UI's prebuilt components and UI elements help you quickly design and customize websites."
           />
-          <div className="grid grid-cols-4 my-12 gap-6 px-32">
-            <HomeComponentCard />
-          </div>
+          <HomeComponentCard />
           <div className="flex justify-center items-center">
             <MovingButton>View All Components</MovingButton>
           </div>

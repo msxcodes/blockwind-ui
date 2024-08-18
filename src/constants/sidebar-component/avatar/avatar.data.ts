@@ -13,9 +13,24 @@ export const AvatarNavData: IComponentNavMenu[] = [
     href: "#rounded-avatar",
   },
   {
-    name: "Placeholder Avatar",
-    id: "placeholder-avatar",
-    href: "#placeholder-avatar",
+    name: "Avatar with bottom state",
+    id: "bottom-state-avatar",
+    href: "#bottom-state-avatar",
+  },
+  {
+    name: "Avatar with top state",
+    id: "top-state-avatar",
+    href: "#top-state-avatar",
+  },
+  {
+    name: "Avatar group",
+    id: "avatar-group",
+    href: "#avatar-group",
+  },
+  {
+    name: "Avatar with text",
+    id: "text-avatar",
+    href: "#text-avatar",
   },
 ];
 

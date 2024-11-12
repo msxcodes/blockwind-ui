@@ -19,6 +19,7 @@ export default function CardComponent() {
               preview={data.preview}
               language={data.language}
               html={data.html}
+              jsx={data.jsx}
             />
           </div>
         );
@@ -33,7 +34,9 @@ const _cardData: IMainContentComponent[] = [
     title: "Simple Card",
     description:
       "Cards provide a flexible and extensible content container with multiple variants and options.",
-    code: "Card Code",
+    html: "Card Code",
+    jsx: "Card Code",
+    sectionID: "simple-card",
     language: "html",
     preview: (
       <div className="flex justify-center items-center mt-2">
@@ -67,7 +70,9 @@ const _cardData: IMainContentComponent[] = [
     title: "Card with background",
     description:
       "Cards provide a flexible and extensible content container with multiple variants and options.",
-    code: "Card Code",
+    html: "Card Code",
+    jsx: "Card Code",
+    sectionID: "background-card",
     language: "html",
     preview: (
       <div className="flex justify-center items-center mt-2">

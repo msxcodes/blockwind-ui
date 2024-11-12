@@ -2,7 +2,16 @@ import React from "react";
 import { Card, CardHeader, Image } from "@nextui-org/react";
 import ComponentIcon from "../../../public/icons/component-icon1.png";
 
+interface IAboutCardProps {
+  id: number | undefined;
+  title: string;
+  description: string;
+  image: string; // Replace with ImageProps type when available in Next.js 13.4+
+  // Add more props as needed for the AboutCard component, such as author, date, etc.
+}
+
 export default function AboutUsCard({
+  id,
   title,
   description,
   image,

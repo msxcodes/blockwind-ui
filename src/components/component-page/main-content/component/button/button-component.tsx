@@ -12,11 +12,13 @@ export default function ButtonComponent() {
             <ComponentTypeHeader
               title={data.title}
               description={data.description}
+              sectionID="jd"
             />
             <SwitchTab
               preview={data.preview}
-              html={data.code}
+              html={data.html}
               language={data.language}
+              jsx={"sjd"}
             />
           </div>
         );
@@ -31,7 +33,9 @@ const _buttonData: IMainContentComponent[] = [
     title: "Default Button",
     description: "The most commonly used button styles.",
     language: "html",
-    code: "Code",
+    html: "Code",
+    jsx: "Code",
+    sectionID: "default-button",
     preview: (
       <div className="flex justify-center mt-2 items-center gap-4">
         <button className="bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 text-white py-2 px-4 rounded-md">
@@ -45,7 +49,9 @@ const _buttonData: IMainContentComponent[] = [
     title: "Radius Button",
     description: "Button having different border radius.",
     language: "html",
-    code: "Code",
+    html: "Code",
+    jsx: "Code",
+    sectionID: "radius-button",
     preview: (
       <div className="flex justify-center mt-2 items-center gap-4">
         <button className="bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 text-white py-2 px-4 rounded-sm">
@@ -65,7 +71,9 @@ const _buttonData: IMainContentComponent[] = [
     title: "Outline Button",
     description: "Button having different border.",
     language: "html",
-    code: "Code",
+    html: "Code",
+    jsx: "fdksjf",
+    sectionID: "outline-button",
     preview: (
       <div className="flex justify-center mt-2 items-center gap-4">
         <button className="border border-blue-500 text-blue-500 transition-all duration-300 py-2 px-4 rounded-lg">

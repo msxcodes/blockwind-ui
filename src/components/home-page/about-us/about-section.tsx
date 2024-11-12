@@ -11,6 +11,7 @@ const AboutSection = () => {
             return (
               <div className="flex items-center" key={data.id}>
                 <AboutUsCard
+                  id={data.id}
                   title={data.title}
                   description={data.description}
                   image={data.image}
